@@ -3,24 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="content-itens">
+          <div class="row-data">
+            <p id="product-quantity"></p>
+            <p id="totalPrice"></p>
+          </div>
+          <h1 style="text-align: center; color: lightcoral">
+            Mercadinho do Chico
+          </h1>
+
+          <form>
+            <p>Insira o nome do produto:</p>
+            <input id="product" class="content-input" type="text" required />
+          </form>
+          <button id="consult-value" onclick="getValue()">
+            Consulta valor
+          </button>
+          <button id="purchase" onclick="sell()">Comprar</button>
+          <div>
+            <p id="result-consult"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <div class="content">
-        <h1 style="padding-bottom: 20px">Mercadinho do Chico</h1>
+        <div class="content-header">
+          <h1 style="padding-bottom: 20px">Mercadinho do Chico</h1>
+        </div>
         <form>
           <div class="content-form">
             <label for="product"
               >Insira o código ou nome do produto desejado</label
             >
-            <input type="text" />
-            <button>Consultar valor</button>
-            <button>Comprar produto</button>
+            <input id="product" type="text" />
+            <div class="form-btn">
+              <button id="btn-cv" onclick="consultaValor()">
+                Consultar valor
+              </button>
+              <button id="btn-fc" onclick="fazCompra()">Comprar produto</button>
+              <button id="btn-v" onclick="verfificarValor()">
+                Verificar valor
+              </button>
+            </div>
+          </div>
+          <div>
+            <p></p>
           </div>
         </form>
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
-</html>
+</html> -->
